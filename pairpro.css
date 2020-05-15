@@ -1,27 +1,41 @@
 li {
   list-style: none;
 }
+.container {
+  width: 980px;
+  margin: 0 auto;
+  /* 追記 */
+  min-height: 100%;
+  position: relative;
+}
 .header {
   background-color: #F5B4B3;
   height: 50px;
   font-size: 1.5rem;
   padding-bottom: 20px;
 }
+.header ul{
+  margin: 0;
+}
 .header li {
   float:left;
-  padding-top: 15px;
-  padding-right: 15px;
-  padding-bottom: 30px;
-  padding-left: 15px;
+  width: auto;
+}
+.header li a{
+  display:block;
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
 }
 .clearfix:after {
   content: "";
   display: block;
   clear: both;
 }
-.img {
+.logo_img {
   float: left;
-  height: 50px;
+  height: 45px;
+  padding: 10px;
 }
 .side_menu{
   width: 300px;
@@ -39,6 +53,11 @@ li {
   text-decoration: none;
   display: block;
   padding: 2rem;
+}
+.content {
+  width: 660px;
+  margin-left: 20px;
+  float: left;
 }
 .footer{
   width: 100%;
